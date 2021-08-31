@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ResourceView
+namespace CustomResourceView
 {
-    public class Task : NotificationObject
+    public class Appointment : NotificationObject
     {
         DateTime from, to;
         string title;

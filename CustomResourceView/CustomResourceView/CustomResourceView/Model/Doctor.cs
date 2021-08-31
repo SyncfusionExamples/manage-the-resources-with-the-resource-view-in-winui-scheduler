@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ResourceView
+namespace CustomResourceView
 {
-    public class Employee
+    public class Doctor
     {
         /// <summary>
         /// Gets or sets the resource name.
@@ -18,7 +18,12 @@ namespace ResourceView
         /// <summary>
         /// Gets or sets the resource id.
         /// </summary>
-        public object ID { get; set; }
+        public object Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets the resource designation.
+        /// </summary>
+        public string Designation { get; set; }
 
         /// <summary>
         /// Gets or sets the resource background brush.
@@ -29,6 +34,11 @@ namespace ResourceView
         /// Gets or sets the foreground brush.
         /// </summary>
         public Brush ForegroundBrush { get; set; }
+
+        /// <summary>
+        /// Gets or sets the image source.
+        /// </summary>
+        public string ImageSource { get; set; }
 
     }
 
