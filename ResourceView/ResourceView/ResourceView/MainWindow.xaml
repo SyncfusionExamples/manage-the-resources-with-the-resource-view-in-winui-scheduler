@@ -33,9 +33,9 @@
             </syncfusion:SfScheduler.AppointmentMapping>
             <syncfusion:SfScheduler.ResourceCollection>
                 <local:SchedulerResourceCollection>
-                    <local:Doctor Name="Dr.Sophia" Id="1" ForegroundBrush="White" BackgroundBrush="DarkViolet" />
-                    <local:Doctor Name="Dr.Kinsley Elena" Id="2" ForegroundBrush="White" BackgroundBrush="OrangeRed" />
-                    <local:Doctor Name="Dr.Adeline Ruby" Id="3" ForegroundBrush="White" BackgroundBrush="MediumSeaGreen" />
+                    <local:Doctor Name="Dr.Sophia" Id="1" ForegroundBrush="White" BackgroundBrush="#9d65c9" />
+                    <local:Doctor Name="Dr.Kinsley Elena" Id="2" ForegroundBrush="White" BackgroundBrush="#f08a5d" />
+                    <local:Doctor Name="Dr.Adeline Ruby" Id="3" ForegroundBrush="White" BackgroundBrush="#679b9b" />
                 </local:SchedulerResourceCollection>
             </syncfusion:SfScheduler.ResourceCollection>
         </syncfusion:SfScheduler>

@@ -57,9 +57,9 @@
             </syncfusion:SfScheduler.AppointmentMapping>
             <syncfusion:SfScheduler.ResourceCollection>
                 <local:SchedulerResourceCollection>
-                    <local:Doctor Name="Dr.Sophia" Id="1" ForegroundBrush="White" BackgroundBrush="DarkViolet" Designation="Eye Department"  ImageSource="/Assets/People_Circle1.png" />
-                    <local:Doctor Name="Dr.Kinsley Elena" Id="2" ForegroundBrush="White" BackgroundBrush="OrangeRed" Designation="Heart Department" ImageSource="/Assets/People_Circle2.png" />
-                    <local:Doctor Name="Dr.Adeline Ruby" Id="3" ForegroundBrush="White" BackgroundBrush="MediumSeaGreen" Designation="Ear Department" ImageSource="/Assets/People_Circle3.png" />
+                    <local:Doctor Name="Dr.Sophia" Id="1" ForegroundBrush="White" BackgroundBrush="#9d65c9" Designation="Eye Department"  ImageSource="/Assets/People_Circle1.png" />
+                    <local:Doctor Name="Dr.Kinsley Elena" Id="2" ForegroundBrush="White" BackgroundBrush="#f08a5d" Designation="Heart Department" ImageSource="/Assets/People_Circle2.png" />
+                    <local:Doctor Name="Dr.Adeline Ruby" Id="3" ForegroundBrush="White" BackgroundBrush="#679b9b" Designation="Ear Department" ImageSource="/Assets/People_Circle3.png" />
                 </local:SchedulerResourceCollection>
             </syncfusion:SfScheduler.ResourceCollection>
             
