@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ResourceView
 {
-    public class Task : NotificationObject
+    public class Appointment : NotificationObject
     {
         DateTime from, to;
         string title;

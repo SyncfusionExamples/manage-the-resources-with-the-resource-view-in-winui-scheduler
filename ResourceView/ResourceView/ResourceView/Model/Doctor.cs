@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ResourceView
 {
-    public class Employee
+    public class Doctor
     {
         /// <summary>
         /// Gets or sets the resource name.
@@ -18,7 +18,7 @@ namespace ResourceView
         /// <summary>
         /// Gets or sets the resource id.
         /// </summary>
-        public object ID { get; set; }
+        public object Id { get; set; }
 
         /// <summary>
         /// Gets or sets the resource background brush.

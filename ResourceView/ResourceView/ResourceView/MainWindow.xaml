@@ -14,10 +14,10 @@
         <syncfusion:SfScheduler ViewType="Week" 
                                 x:Name="Scheduler"
                                 ResourceGroupType="Resource"
-                                ItemsSource="{Binding Tasks}">
+                                ItemsSource="{Binding Appointments}">
             <syncfusion:SfScheduler.ResourceMapping>
                 <syncfusion:ResourceMapping 
-                    Id="ID" 
+                    Id="Id" 
                     Name="Name" 
                     Background="BackgroundBrush" 
                     Foreground="ForegroundBrush"/>
@@ -33,9 +33,9 @@
             </syncfusion:SfScheduler.AppointmentMapping>
             <syncfusion:SfScheduler.ResourceCollection>
                 <local:SchedulerResourceCollection>
-                    <local:Employee Name="Sophia" ID="1" ForegroundBrush="White" BackgroundBrush="DarkViolet" />
-                    <local:Employee Name="Kinsley Elena" ID="2" ForegroundBrush="White" BackgroundBrush="OrangeRed" />
-                    <local:Employee Name="Adeline Ruby" ID="3" ForegroundBrush="White" BackgroundBrush="MediumSeaGreen" />
+                    <local:Doctor Name="Dr.Sophia" Id="1" ForegroundBrush="White" BackgroundBrush="DarkViolet" />
+                    <local:Doctor Name="Dr.Kinsley Elena" Id="2" ForegroundBrush="White" BackgroundBrush="OrangeRed" />
+                    <local:Doctor Name="Dr.Adeline Ruby" Id="3" ForegroundBrush="White" BackgroundBrush="MediumSeaGreen" />
                 </local:SchedulerResourceCollection>
             </syncfusion:SfScheduler.ResourceCollection>
         </syncfusion:SfScheduler>
