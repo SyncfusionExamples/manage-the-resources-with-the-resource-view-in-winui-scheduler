@@ -14,7 +14,7 @@
         <syncfusion:SfScheduler ViewType="Week" 
                                 x:Name="Scheduler"
                                 ResourceGroupType="Resource"
-                                ItemsSource="{Binding Tasks}">
+                                ItemsSource="{Binding Appointments}">
             <syncfusion:SfScheduler.ResourceHeaderTemplate>
                 <DataTemplate>
                     <Grid Background="Transparent">
@@ -41,7 +41,7 @@
             </syncfusion:SfScheduler.ResourceHeaderTemplate>
             <syncfusion:SfScheduler.ResourceMapping>
                 <syncfusion:ResourceMapping 
-                    Id="ID" 
+                    Id="Id" 
                     Name="Name" 
                     Background="BackgroundBrush" 
                     Foreground="ForegroundBrush"/>
@@ -57,9 +57,9 @@
             </syncfusion:SfScheduler.AppointmentMapping>
             <syncfusion:SfScheduler.ResourceCollection>
                 <local:SchedulerResourceCollection>
-                    <local:Employee Name="Sophia" ID="1" ForegroundBrush="White" BackgroundBrush="DarkViolet" Designation="Team Leader"  ImageSource="/Assets/People_Circle1.png" />
-                    <local:Employee Name="Kinsley Elena" ID="2" ForegroundBrush="White" BackgroundBrush="OrangeRed" Designation="Developer" ImageSource="/Assets/People_Circle2.png" />
-                    <local:Employee Name="Adeline Ruby" ID="3" ForegroundBrush="White" BackgroundBrush="MediumSeaGreen" Designation="Tester" ImageSource="/Assets/People_Circle3.png" />
+                    <local:Doctor Name="Dr.Sophia" Id="1" ForegroundBrush="White" BackgroundBrush="DarkViolet" Designation="Eye Department"  ImageSource="/Assets/People_Circle1.png" />
+                    <local:Doctor Name="Dr.Kinsley Elena" Id="2" ForegroundBrush="White" BackgroundBrush="OrangeRed" Designation="Heart Department" ImageSource="/Assets/People_Circle2.png" />
+                    <local:Doctor Name="Dr.Adeline Ruby" Id="3" ForegroundBrush="White" BackgroundBrush="MediumSeaGreen" Designation="Ear Department" ImageSource="/Assets/People_Circle3.png" />
                 </local:SchedulerResourceCollection>
             </syncfusion:SfScheduler.ResourceCollection>
             
