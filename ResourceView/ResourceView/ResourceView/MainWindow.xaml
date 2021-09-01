@@ -4,40 +4,40 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:ResourceView"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:syncfusion="using:Syncfusion.UI.Xaml.Scheduler"
+    xmlns:scheduler="using:Syncfusion.UI.Xaml.Scheduler"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid>
         <Grid.DataContext>
             <local:SchedulerViewModel/>
         </Grid.DataContext>
-        <syncfusion:SfScheduler ViewType="Week" 
+        <scheduler:SfScheduler ViewType="Week" 
                                 x:Name="Scheduler"
                                 ResourceGroupType="Resource"
                                 ItemsSource="{Binding Appointments}">
-            <syncfusion:SfScheduler.ResourceMapping>
-                <syncfusion:ResourceMapping 
+            <scheduler:SfScheduler.ResourceMapping>
+                <scheduler:ResourceMapping 
                     Id="Id" 
                     Name="Name" 
                     Background="BackgroundBrush" 
                     Foreground="ForegroundBrush"/>
-            </syncfusion:SfScheduler.ResourceMapping>
-            <syncfusion:SfScheduler.AppointmentMapping>
-                <syncfusion:AppointmentMapping 
+            </scheduler:SfScheduler.ResourceMapping>
+            <scheduler:SfScheduler.AppointmentMapping>
+                <scheduler:AppointmentMapping 
                     Subject="Title" 
                     StartTime="From"
                     EndTime="To"
                     AppointmentBackground="Color"
                     ResourceIdCollection ="Assignees"
                     IsAllDay="IsAllDay"/>
-            </syncfusion:SfScheduler.AppointmentMapping>
-            <syncfusion:SfScheduler.ResourceCollection>
+            </scheduler:SfScheduler.AppointmentMapping>
+            <scheduler:SfScheduler.ResourceCollection>
                 <local:SchedulerResourceCollection>
                     <local:Doctor Name="Dr.Sophia" Id="1" ForegroundBrush="White" BackgroundBrush="#9d65c9" />
                     <local:Doctor Name="Dr.Kinsley Elena" Id="2" ForegroundBrush="White" BackgroundBrush="#f08a5d" />
                     <local:Doctor Name="Dr.Adeline Ruby" Id="3" ForegroundBrush="White" BackgroundBrush="#679b9b" />
                 </local:SchedulerResourceCollection>
-            </syncfusion:SfScheduler.ResourceCollection>
-        </syncfusion:SfScheduler>
+            </scheduler:SfScheduler.ResourceCollection>
+        </scheduler:SfScheduler>
     </Grid>
 </Window>
